@@ -2,7 +2,8 @@
   "name": "pacman-canvas",
   "version": "1.0.6",
   "description": "pacman-canvas =============",
-  "main": "pacman-canvas.js",
+  "main": "server.js",
+  "bin": "server.js",
   "scripts": {
     "start": "node server.js",
     "test": "jest",
@@ -26,5 +27,17 @@
     "webpack": "^5.76.0",
     "webpack-cli": "^4.5.0",
     "webpack-dev-server": "^4.10.0"
+  },
+  "pkg": {
+    "assets": [
+      "index.htm",
+      "data/**/*",
+      "fonts/**/*",
+      "img/**/*",
+      "js/**/*",
+      "mp3/**/*",
+      "wav/**/*"
+    ],
+    "outputPath": "./dist"
   }
 }
